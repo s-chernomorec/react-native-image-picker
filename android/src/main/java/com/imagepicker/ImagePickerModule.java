@@ -463,7 +463,6 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
         if (requestCode == REQUEST_LAUNCH_IMAGE_CAPTURE) {
           imageConfig.original.delete();
         }
-        
         uri = Uri.fromFile(imageConfig.resized);
         BitmapFactory.decodeFile(imageConfig.resized.getAbsolutePath(), options);
         responseHelper.putInt("width", options.outWidth);
