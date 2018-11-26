@@ -454,7 +454,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
       imageConfig = getResizedImage(reactContext, this.options, imageConfig, initialWidth, initialHeight, requestCode);
 
       if (imageConfig == null) {
-        responseHelper.putString("error", "Image contains error");
+        responseHelper.putString("error", "Image contains errors");
         responseHelper.invokeResponse(callback);
         callback = null;
         this.options = null;
