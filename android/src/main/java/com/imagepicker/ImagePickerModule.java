@@ -458,6 +458,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
         responseHelper.invokeResponse(callback);
         callback = null;
         this.options = null;
+        return;
       }
 
       if (imageConfig.resized == null)
